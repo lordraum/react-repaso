@@ -146,6 +146,17 @@ export default MyComponent;
 // Se instancia de igual forma que los componentes funcionales
 ```
 
+## Eventos
+Similar a HTML pero con camelCase, reemplazando los listeners de JS.
+
+```jsx
+<button onClick={() => console.log("Haz Hecho Click")}>
+    Has Click!!
+</button>
+```
+
+### Handles
+Funciones que manejan los eventos
 
 
 
