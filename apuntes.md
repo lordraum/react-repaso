@@ -123,6 +123,31 @@ Se escriben entre paréntesis excepto los strings.
 ### CSS clases
 La palabra reservada cambia a `className` => `<h2 className="blue_text">{subtitle}</h2>`
 
+## Componentes basados en clases
+
+```jsx
+import React, { Component } from 'react';
+
+class MyComponent extends Component {
+  render() {
+    const { title, subtitle } = this.props;
+
+    return (
+      <div>
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+      </div>
+    );
+  }
+}
+
+export default MyComponent;
+
+// Se instancia de igual forma que los componentes funcionales
+```
+
+
+
 
 
 
