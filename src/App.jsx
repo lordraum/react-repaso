@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <MyComponent
-        title="asdfas"
+        title="React Component"
         subtitle="Componente de react con props destructuradas"
       />
     </>
