@@ -158,6 +158,12 @@ Similar a HTML pero con camelCase, reemplazando los listeners de JS.
 ### Handles
 Funciones que manejan los eventos
 
+```jsx
+const handleChange = (e) => console.log(e.target.value);
+//
+<input onChange={handleChange} id="input" type="text" />
+```
+
 ## key
 Le da un valor único a un item de un iterable
 
@@ -173,7 +179,7 @@ const MyNav = () => {
       <nav>
         {navigation.map((x, k) => (
           <ul key={k}>
-            <li key={k}>
+            <li>
               <a href="#">{x.item}</a>
             </li>
           </ul>

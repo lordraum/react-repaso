@@ -18,7 +18,7 @@ const MyNav = () => {
     <nav>
       {navigation.map((x, k) => (
         <ul key={k}>
-          <li key={k}>
+          <li>
             <a href="#">{x.item}</a>
           </li>
         </ul>
