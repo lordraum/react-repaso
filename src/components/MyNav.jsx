@@ -15,17 +15,15 @@ const navigation = [
 
 const MyNav = () => {
   return (
-    <>
-      <nav>
-        {navigation.map((x, k) => (
-          <ul key={k}>
-            <li key={k}>
-              <a href="#">{x.item}</a>
-            </li>
-          </ul>
-        ))}
-      </nav>
-    </>
+    <nav>
+      {navigation.map((x, k) => (
+        <ul key={k}>
+          <li key={k}>
+            <a href="#">{x.item}</a>
+          </li>
+        </ul>
+      ))}
+    </nav>
   );
 };
 

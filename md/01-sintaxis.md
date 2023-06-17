@@ -1,6 +1,6 @@
 <!-- 16 de Junio 2023 -->
 
-# Repaso React
+# Repaso React - Sintáxis y bases
 
 ## Hello World
 
@@ -169,8 +169,7 @@ const navigation = [
 ];
 
 const MyNav = () => {
-  return (
-    <>
+  return (    
       <nav>
         {navigation.map((x, k) => (
           <ul key={k}>
@@ -179,8 +178,7 @@ const MyNav = () => {
             </li>
           </ul>
         ))}
-      </nav>
-    </>
+      </nav>    
   );
 };
 ```
