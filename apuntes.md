@@ -158,7 +158,32 @@ Similar a HTML pero con camelCase, reemplazando los listeners de JS.
 ### Handles
 Funciones que manejan los eventos
 
+## key
+Le da un valor único a un item de un iterable
 
+```jsx
+const navigation = [
+  new NavItem(1, "Home"),
+  new NavItem(2, "About"),
+  new NavItem(3, "Services"),
+];
+
+const MyNav = () => {
+  return (
+    <>
+      <nav>
+        {navigation.map((x, k) => (
+          <ul key={k}>
+            <li key={k}>
+              <a href="#">{x.item}</a>
+            </li>
+          </ul>
+        ))}
+      </nav>
+    </>
+  );
+};
+```
 
 
 
