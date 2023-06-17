@@ -109,9 +109,19 @@ Se escriben entre paréntesis excepto los strings.
 ```jsx
 // formato JSX
 <h1>Fragmento de {titleFragment}</h1>
-// Template listerals
+// js template literals
 <h1>{`Fragmento de ${titleFragment}`}</h1>
 ```
+## Estilos
+
+### En línea
+`style` es un objeto, por esa va entre `{{}}`. propiedades formato camelCase
+```jsx
+<h1 style={{ backgroundColor: "steelblue" }}
+>{`Fragmento de ${titleFragment}`}</h1>
+```
+### CSS clases
+La palabra reservada cambia a `className` => `<h2 className="blue_text">{subtitle}</h2>`
 
 
 
