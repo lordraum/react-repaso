@@ -1,8 +1,10 @@
 import React from "react";
-import MyComponent from "./components/MyComponent";
-import Click from "./components/Click";
-import TextField from "./components/TextField";
-import MyNav from "./components/MyNav";
+import MyComponent from "./components/basics/MyComponent";
+import Click from "./components/basics/Click";
+import TextField from "./components/basics/TextField";
+import MyNav from "./components/basics/MyNav";
+import Count from "./components/hooks/Count";
+import CountImpar from "./components/hooks/CountImpar";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <Click />
       <TextField />
       <MyNav />
+      <Count />
+      <CountImpar />
     </>
   );
 };
