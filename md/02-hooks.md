@@ -40,3 +40,17 @@ useEffect(() => {
 - Gestionar temporizadores o intervalos.
 - Realizar operaciones de inicialización o configuración al montar el componente.
 
+## Context
+
+### ¿Qué recuerdo?
+
+Es una forma de compartir datos y funcionalidades con diferentes componentes, mediante un componente que envolverá a todos los demás que necesiten dichos recursos.
+
+- createContext()
+  - Crea un contexto para compartir recursos. Es recomendable crear la carpeta contexts/.
+- useContext()
+  - Hace uso de los recursos requeridos por el componente que se encuentren en el contexto.
+- Provider => `<Provider />`
+  - Función del contexto que devolverá un objeto con los recursos compartidos y que se montará en un componente padre de los demás (main, App, etc) 
+
+
